@@ -2,8 +2,11 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # Runs every 12 hours
+    - cron: "0 */12 * * *" # 每12小时运行一次
   workflow_dispatch:
+
+permissions:
+  contents: write # 授予仓库内容写入权限
 
 jobs:
   build:
