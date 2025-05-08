@@ -85,31 +85,3 @@
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/DudeGuuud/DudeGuuud/output/github-contribution-grid-snake.svg">
   </picture>
 </div>
-
-<br/>
-
-<div align="center">
-  <h2>
-    <img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/handshake.gif" width="65px"> 
-    Connect With Me
-  </h2>
-</div>
-
-<div align="center">
-  <a href="https://github.com/DudeGuuud">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-  <!-- Add more social links as needed -->
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=DudeGuuud&color=4776E6&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4776E6,100:0c1e4a&height=120&section=footer" width="100%" alt="Footer"/>
-</div>
