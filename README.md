@@ -1,9 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0c1e4a,100:4776E6&height=200&section=header&text=DudeGuuud&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=d6e7ff" width="100%" alt="Header"/>
-</div>
-
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=30&duration=3000&pause=1000&color=4776E6&center=true&vCenter=true&width=600&lines=Full+Stack+Code+Generator+Operator;Tech+Enthusiast;Always+Learning" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=30&duration=3000&pause=1000&color=4776E6&center=true&vCenter=true&width=600&lines=CyberSecurity & Web3 Developemt;Tech+Enthusiast" alt="Typing SVG" />
 </div>
 
 <br/>
