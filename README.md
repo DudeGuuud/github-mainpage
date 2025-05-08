@@ -52,7 +52,7 @@
 
 <div align="center">
   <a href="https://github.com/DudeGuuud/NarrFlow-Web3">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=DudeGuuud&repo=NarrFlow-Web3)&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4776E6&icon_color=4776E6&text_color=c9d1d9" width="49%" alt="GitHub Mainpage"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=DudeGuuud&repo=NarrFlow-Web3&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4776E6&icon_color=4776E6&text_color=c9d1d9" width="49%" alt="GitHub Mainpage"/>
   </a>
   <!-- Add more projects as you create them -->
 </div>
