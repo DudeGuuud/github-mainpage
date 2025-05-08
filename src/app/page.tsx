@@ -1,103 +1,161 @@
 import Image from "next/image";
+import { MovingGradient } from "@/components/ui/moving-gradient";
+import { GlowingText } from "@/components/ui/glowing-text";
+import { Card3d } from "@/components/ui/3d-card";
+import { TechCard } from "@/components/ui/tech-card";
+import { ProjectCard } from "@/components/ui/project-card";
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBrandTwitter,
+  IconCode,
+  IconDatabase,
+  IconDeviceDesktop,
+  IconBrain
+} from "@tabler/icons-react";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Background */}
+      <MovingGradient
+        containerClassName="absolute inset-0 z-0"
+        colors={["#0f172a", "#1e293b", "#334155", "#1e40af", "#1e3a8a"]}
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      {/* Content */}
+      <div className="relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <header className="mb-16 text-center">
+          <div className="mx-auto mb-8 h-32 w-32 overflow-hidden rounded-full border-4 border-cyan-500/30 bg-slate-900 p-1 shadow-lg shadow-cyan-500/20">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="https://github.com/identicons/github.png"
+              alt="Profile"
+              width={120}
+              height={120}
+              className="rounded-full"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+          </div>
+          <GlowingText
+            text="Your Name"
+            className="mb-2 text-4xl sm:text-5xl"
+            glowColor="cyan"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <p className="mx-auto max-w-2xl text-lg text-slate-400">
+            Full-Stack Developer | AI Enthusiast | Open Source Contributor
+          </p>
+
+          <div className="mt-6 flex justify-center space-x-4">
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-slate-800 p-3 text-slate-200 transition-all hover:bg-slate-700 hover:text-cyan-400 hover:shadow-md hover:shadow-cyan-500/20"
+            >
+              <IconBrandGithub size={24} />
+            </a>
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-slate-800 p-3 text-slate-200 transition-all hover:bg-slate-700 hover:text-cyan-400 hover:shadow-md hover:shadow-cyan-500/20"
+            >
+              <IconBrandLinkedin size={24} />
+            </a>
+            <a
+              href="https://twitter.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-slate-800 p-3 text-slate-200 transition-all hover:bg-slate-700 hover:text-cyan-400 hover:shadow-md hover:shadow-cyan-500/20"
+            >
+              <IconBrandTwitter size={24} />
+            </a>
+          </div>
+        </header>
+
+        <section className="mb-16">
+          <GlowingText
+            text="About Me"
+            className="mb-8 text-center text-3xl"
+            glowColor="cyan"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <Card3d className="mx-auto max-w-3xl p-6 sm:p-8">
+            <p className="mb-4 text-slate-300">
+              Hi there! I&apos;m a passionate developer with expertise in building modern web applications.
+              I love working with cutting-edge technologies and creating beautiful, functional user experiences.
+            </p>
+            <p className="text-slate-300">
+              With a background in computer science and several years of industry experience,
+              I specialize in full-stack development, AI integration, and cloud architecture.
+              I&apos;m always looking to collaborate on interesting projects!
+            </p>
+          </Card3d>
+        </section>
+
+        <section className="mb-16">
+          <GlowingText
+            text="Skills & Technologies"
+            className="mb-8 text-center text-3xl"
+            glowColor="purple"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <TechCard
+              title="Frontend"
+              description="React, Next.js, TypeScript, Tailwind CSS, Framer Motion"
+              icon={<IconDeviceDesktop size={24} />}
+            />
+            <TechCard
+              title="Backend"
+              description="Node.js, Express, Python, Django, GraphQL"
+              icon={<IconCode size={24} />}
+            />
+            <TechCard
+              title="Database"
+              description="PostgreSQL, MongoDB, Redis, Supabase"
+              icon={<IconDatabase size={24} />}
+            />
+            <TechCard
+              title="AI & ML"
+              description="TensorFlow, PyTorch, Hugging Face, OpenAI"
+              icon={<IconBrain size={24} />}
+            />
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <GlowingText
+            text="Featured Projects"
+            className="mb-8 text-center text-3xl"
+            glowColor="green"
+          />
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <ProjectCard
+              title="AI Image Generator"
+              description="A web application that uses AI to generate images from text descriptions."
+              tags={["React", "Node.js", "OpenAI"]}
+              link="https://github.com/yourusername/project1"
+            />
+            <ProjectCard
+              title="E-commerce Platform"
+              description="A full-featured e-commerce platform with payment processing and inventory management."
+              tags={["Next.js", "Stripe", "PostgreSQL"]}
+              link="https://github.com/yourusername/project2"
+            />
+            <ProjectCard
+              title="Real-time Chat App"
+              description="A real-time chat application with end-to-end encryption and file sharing."
+              tags={["React", "Socket.io", "Firebase"]}
+              link="https://github.com/yourusername/project3"
+            />
+          </div>
+        </section>
+
+        <footer className="mt-16 text-center text-sm text-slate-500">
+          <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p className="mt-2">
+            Built with Next.js, Tailwind CSS, and Framer Motion. Inspired by Aceternity UI.
+          </p>
+        </footer>
+      </div>
     </div>
   );
 }
